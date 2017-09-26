@@ -1,0 +1,18 @@
+---
+title: "Fenway Park"
+author: "Ryan Kramer"
+date: "9/26/2017"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+## Location of Fenway Park
+
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>% addTiles() 
+my_map <- my_map %>% addMarkers(lat=42.3467, lng=-71.0972, popup = "The Red Sox play here.")
+my_map
+```
